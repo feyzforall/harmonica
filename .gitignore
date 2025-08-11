@@ -1,0 +1,43 @@
+# General
+.DS_Store
+*.log
+*.env*
+!.env.example
+
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+*.xcworkspace/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+
+# CocoaPods
+Pods/
+*.lock
+
+# SwiftPM
+.swiftpm/
+.build/
+
+# Carthage
+Carthage/Build/
+
+# iOS artifacts
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Android
+.local/
+.gradle/
+**/build/
+captures/
+local.properties
+*.iml
+*.keystore
+*.jks
+*.aab
+*.apk
