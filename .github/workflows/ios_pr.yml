@@ -1,0 +1,22 @@
+name: iOS PR
+on:
+  pull_request:
+    paths: ['ios/**']
+jobs:
+  build-test:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Xcode version
+        run: xcodebuild -version
+
+      - name: Build & Test (iOS 18.5 sim)
+        run: |
+          cd ios
+          xcodebuild \
+            -scheme "Harmonica" \
+            -destination 'platform=iOS Simulator,name=iPhone 15,OS=18.5' \
+            -configuration Debug \
+            clean test | xcpretty
+
