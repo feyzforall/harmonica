@@ -30,11 +30,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		255EF7FE2E4A1FCB000A8BCA /* harmonica */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = harmonica;
-			sourceTree = "<group>";
-		};
 		255EF80C2E4A1FCD000A8BCA /* harmonicaTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = harmonicaTests;
@@ -43,6 +38,11 @@
 		255EF8162E4A1FCD000A8BCA /* harmonicaUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = harmonicaUITests;
+			sourceTree = "<group>";
+		};
+		2592A0152E4A7515001E2204 /* harmonica */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = harmonica;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,7 +75,7 @@
 		255EF7F32E4A1FCB000A8BCA = {
 			isa = PBXGroup;
 			children = (
-				255EF7FE2E4A1FCB000A8BCA /* harmonica */,
+				2592A0152E4A7515001E2204 /* harmonica */,
 				255EF80C2E4A1FCD000A8BCA /* harmonicaTests */,
 				255EF8162E4A1FCD000A8BCA /* harmonicaUITests */,
 				255EF7FD2E4A1FCB000A8BCA /* Products */,
@@ -108,7 +108,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				255EF7FE2E4A1FCB000A8BCA /* harmonica */,
+				2592A0152E4A7515001E2204 /* harmonica */,
 			);
 			name = harmonica;
 			packageProductDependencies = (
