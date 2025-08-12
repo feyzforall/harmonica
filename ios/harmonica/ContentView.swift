@@ -8,17 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var selectedHole: Int = 0
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            Color(red: 24/255, green: 26/255, blue: 31/255)
+            
+            ZStack {
+                TunerDialView(cents: 0, targetNote: "C")
+                
+                HoleStripView(holeCount: 10, selectedHole: $selectedHole) { hole in
+                    selectedHole = hole
+                }
+                .offset(y: 100)
+            }
         }
-        .padding()
+        .ignoresSafeArea()
     }
+    
 }
 
 #Preview {
     ContentView()
 }
+
